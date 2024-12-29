@@ -25,3 +25,17 @@ function isPangram(string) {
   // Check if we have all 26 letters of the alphabet
   return uniqueLetters.size === 26;
 }
+
+function isPangram(string){
+  
+  let panagram = "abcdefghijklmnopqrstuvwxyz"
+  
+  let ltrcase =string.toLowerCase()
+  
+  for(let letter of panagram){
+    if(!ltrcase.includes(letter)){
+      return false 
+     }
+  }
+      return true 
+  }
